@@ -1,0 +1,9 @@
+{
+  "reference": "Advisory build and test thresholds; see docs/BUILD.md. These are distinct from hardware limits.",
+  "rom_bytes": 786432,
+  "ram_static_bytes": 40960,
+  "custom_tiles": 64,
+  "heap_high_water": 10500,
+  "stack_used": 2048,
+  "work_max_subticks": 32768
+}

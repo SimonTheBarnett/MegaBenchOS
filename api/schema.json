@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MegaBenchOS API contract v1",
+  "type": "object",
+  "required": [
+    "version",
+    "types",
+    "functions",
+    "compatibility"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "types": {
+      "type": "string"
+    },
+    "compatibility": {
+      "type": "string"
+    },
+    "functions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "family",
+          "signature",
+          "purpose",
+          "arguments",
+          "returns",
+          "ownership",
+          "errors",
+          "timing",
+          "capability",
+          "example",
+          "negative",
+          "edges"
+        ],
+        "properties": {
+          "parameters": {
+            "type": "object",
+            "additionalProperties": { "type": "string", "minLength": 1 }
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "family": {
+            "type": "string",
+            "minLength": 1
+          },
+          "signature": {
+            "type": "string",
+            "minLength": 1
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 1
+          },
+          "arguments": {
+            "type": "string",
+            "minLength": 1
+          },
+          "returns": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ownership": {
+            "type": "string",
+            "minLength": 1
+          },
+          "errors": {
+            "type": "string",
+            "minLength": 1
+          },
+          "timing": {
+            "type": "string",
+            "minLength": 1
+          },
+          "capability": {
+            "type": "string",
+            "minLength": 1
+          },
+          "example": {
+            "type": "string",
+            "minLength": 1
+          },
+          "negative": {
+            "type": "string",
+            "minLength": 1
+          },
+          "edges": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  }
+}

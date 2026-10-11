@@ -1,0 +1,1 @@
+{"version":1,"provenance":"Original MIT native C pixel art, tools/native/demos.c","format":"Packed 4bpp RGB333 ROM patterns/maps","megabounce_tiles":1339,"megabounce_rotation_frames":8,"ocean_motion_frames":8,"colourstorm_tiles":57,"ocean_scene_tiles":[868,1072,1091],"stardrive_tiles":93,"max_leased_pattern_bytes":42848,"cpu_upload_tiles_per_flush":24,"dma_bytes":0}

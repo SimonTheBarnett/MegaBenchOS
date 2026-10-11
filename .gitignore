@@ -1,0 +1,17 @@
+# Machine-specific configuration and portable-tool/build working directories.
+/config/toolchain.local.json
+*.local.json
+/out/
+/dist/
+/plans/
+/.migration-checkpoints/
+/.vs/
+
+# Test diagnostics, screenshots and recordings stay local.
+/reports/
+*.log
+**/failure.png
+
+# Ignore legacy evidence locations too.
+/docs/test-reports/
+/docs/audit/

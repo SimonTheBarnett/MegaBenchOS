@@ -1,0 +1,41 @@
+{
+    "upstream_commit":  "2e376d0abfa5709f6c0e648095672cd6c1654f93",
+    "creator_url":  "https://safetystoatstudios.itch.io/free-vgms",
+    "license_evidence_url":  "https://github.com/jerellsworth/free_vgms/blob/2e376d0abfa5709f6c0e648095672cd6c1654f93/LICENSE",
+    "license_evidence_filename":  "../LICENSE",
+    "license_evidence_sha256":  "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+    "composer_evidence_filename":  "../mad_bossa.txt",
+    "composer_evidence_sha256":  "be715b885d0fc2a600e2a30a57f4ca1d6575564bd1670097001de81717ea90b7",
+    "tracks":  [
+                   {
+                       "filename":  "ambient_thing.vgm",
+                       "original_path":  "MD_tracks/ambient_thing.vgm",
+                       "title":  "Ambient Thing",
+                       "author":  "Safety Stoat Studios",
+                       "license":  "CC0-1.0",
+                       "source_url":  "https://github.com/jerellsworth/free_vgms/blob/2e376d0abfa5709f6c0e648095672cd6c1654f93/MD_tracks/ambient_thing.vgm",
+                       "sha256":  "f7c40c2d46d13a81d72be4a9ebbc1c1350ae9a856cff8e7676988d40d16027c5",
+                       "bytes":  152035,
+                       "samples":  3386880,
+                       "loop_samples":  0,
+                       "loop_offset":  0,
+                       "converted_asset":  "ambient_thing.xgc",
+                       "resource_symbol":  "music_ambient_thing"
+                   },
+                   {
+                       "filename":  "indoor_wolf_extended_dance_remix.vgm",
+                       "original_path":  "MD_tracks/indoor_wolf_extended_dance_remix.vgm",
+                       "title":  "Indoor Wolf Extended Dance Remix",
+                       "author":  "Safety Stoat Studios",
+                       "license":  "CC0-1.0",
+                       "source_url":  "https://github.com/jerellsworth/free_vgms/blob/2e376d0abfa5709f6c0e648095672cd6c1654f93/MD_tracks/indoor_wolf_extended_dance_remix.vgm",
+                       "sha256":  "69fb856799cc564bf08b67a5ec1a76fed15d02c10937259378fddc250ed9f8d9",
+                       "bytes":  51468,
+                       "samples":  10584000,
+                       "loop_samples":  0,
+                       "loop_offset":  0,
+                       "converted_asset":  "indoor_wolf_extended_dance_remix.xgc",
+                       "resource_symbol":  "music_indoor_wolf_extended_dance_remix"
+                   }
+               ]
+}

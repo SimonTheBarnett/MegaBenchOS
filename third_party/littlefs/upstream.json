@@ -1,0 +1,29 @@
+{
+    "project":  "littlefs",
+    "release":  "v2.11.3",
+    "commit":  "6cb4e86540eca0d9ba62500a298385c9d863c8be",
+    "upstream":  "https://github.com/littlefs-project/littlefs",
+    "license":  "BSD-3-Clause",
+    "files":  [
+                  {
+                      "name":  "lfs.c",
+                      "sha256":  "a36d6a095785ddea9571d541d68d3e4ef01d5b255a99d17d3f07fb6ea60ea132"
+                  },
+                  {
+                      "name":  "lfs.h",
+                      "sha256":  "b1befd7288d08815accc8f9af744c55686c0b9e3ac0061c32ceee38a1b3eb96d"
+                  },
+                  {
+                      "name":  "lfs_util.c",
+                      "sha256":  "f2fbde533670560434bd9f5a547174cc7c5a4670a02c47b4bd85180dced8b2ec"
+                  },
+                  {
+                      "name":  "lfs_util.h",
+                      "sha256":  "548d46aa524dc7449e16739286c1a422a52f9de727ff0be0c2ffc5593f5ca981"
+                  },
+                  {
+                      "name":  "LICENSE.md",
+                      "sha256":  "0cb4ff1daf5fdc1359c6a6ee3116092f08fc100c9d58b1b77ab17bfd801f856d"
+                  }
+              ]
+}

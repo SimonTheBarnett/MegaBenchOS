@@ -1,0 +1,21 @@
+{
+    "upstream_commit":  "5a82f88b87bb442499685c494b7a96278121b4c7",
+    "license_evidence_url":  "https://github.com/Beatscribe/homebrew_vgm/blob/5a82f88b87bb442499685c494b7a96278121b4c7/README.md",
+    "license_evidence_sha256":  "b17bc155e95b7dc5361360cd4b9b0e8a46d2fdb802315dcb74bcd59a9363e8e1",
+    "tracks":  [
+                   {
+                       "filename":  "charge.vgm",
+                       "original_path":  "SEGA_GEN/fanfares/vgm/charge.vgm",
+                       "title":  "Charge",
+                       "author":  "Beatscribe",
+                       "license":  "CC0-1.0",
+                       "source_url":  "https://github.com/Beatscribe/homebrew_vgm/blob/5a82f88b87bb442499685c494b7a96278121b4c7/SEGA_GEN/fanfares/vgm/charge.vgm",
+                       "sha256":  "92d6520412c45d613d55d6b569cf0b1dee7943148079342b22c700d3adedec60",
+                       "bytes":  828,
+                       "samples":  141120,
+                       "converted_asset":  "charge.xgc",
+                       "resource_symbol":  "music_charge"
+                   }
+               ],
+    "license_evidence_filename":  "UPSTREAM_README.md"
+}

@@ -1,0 +1,57 @@
+name: MegaBenchOS ROM and SDK checks
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '25'
+      - name: Set up pinned project tools
+        shell: powershell
+        run: ./scripts/setup.ps1 -InstallTools -InstallEmulatorCore
+      - name: Build ROM and map (advisory budgets)
+        shell: powershell
+        run: |
+          . ./scripts/env.ps1
+          make build
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Test Unity models, assets and public SDK isolation
+        shell: powershell
+        run: |
+          . ./scripts/env.ps1
+          make test
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Check C formatting and static analysis
+        shell: powershell
+        run: |
+          . ./scripts/env.ps1
+          make lint
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - name: Headless GX API-contract smoke test (PAL and NTSC)
+        shell: powershell
+        run: |
+          . ./scripts/env.ps1
+          make test-emulator SCENARIO=contracts TEST_REGION=both
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+          $summary = Get-Content -Raw reports/emulator/summary.json | ConvertFrom-Json
+          if ($summary.status -ne 'PASS' -or @($summary.results).Count -ne 2) {
+            throw 'Both regional emulator smoke tests must pass; SKIPPED is not accepted in CI.'
+          }
+      - name: Package release
+        shell: powershell
+        run: |
+          . ./scripts/env.ps1
+          make package
+          if ($LASTEXITCODE) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MegaBenchOS-ROM-and-maps
+          path: dist/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: MegaBenchOS-host-test-results
+          path: reports/

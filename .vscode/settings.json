@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.h": "c"
+  },
+  "files.encoding": "utf8",
+  "files.eol": "\n",
+  "terminal.integrated.profiles.windows": {
+    "Windows PowerShell": {
+      "path": "${env:windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-NoLogo", "-NoProfile"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Windows PowerShell"
+}

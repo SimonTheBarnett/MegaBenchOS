@@ -1,0 +1,4 @@
+Checks: '-*,clang-analyzer-core.*,clang-analyzer-deadcode.*,bugprone-sizeof-expression,bugprone-suspicious-memset-usage,bugprone-string-literal-with-embedded-nul'
+WarningsAsErrors: '*'
+HeaderFilterRegex: 'tools/native/.*'
+FormatStyle: file

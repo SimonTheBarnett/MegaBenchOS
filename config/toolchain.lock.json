@@ -1,0 +1,33 @@
+[
+    {
+        "name":  "sgdk",
+        "version":  "2.11",
+        "url":  "https://github.com/Stephane-D/SGDK/releases/download/v2.11/sgdk211.7z",
+        "archive":  "sgdk211.7z",
+        "destination":  "sgdk-2.11",
+        "kind":  "7z",
+        "sha256":  "5cc704b7e3a15183c33e721a1d7f84c067cf78808754556d03bb14764df51437",
+        "installed_entry":  "lib/libmd.a"
+    },
+    {
+        "name":  "blastem",
+        "version":  "1.0.0",
+        "url":  "https://www.retrodev.com/blastem/blastem-win64-1.0.0.zip",
+        "archive":  "blastem.zip",
+        "destination":  "blastem-1.0.0",
+        "kind":  "zip",
+        "sha256":  "fa9d988e2c7d0eb7fa2ccda8337918c46b9dcd3106222fbcdb0020505f121908",
+        "installed_entry":  "blastem-win64-1.0.0/blastem.exe"
+    },
+    {
+        "name":  "genesis_plus_gx_core",
+        "version":  "v1.7.4 393f70c",
+        "url":  "https://buildbot.libretro.com/nightly/windows/x86_64/latest/genesis_plus_gx_libretro.dll.zip",
+        "archive":  "genesis-plus-gx.zip",
+        "destination":  "genesis-plus-gx",
+        "kind":  "zip",
+        "sha256":  "a30944605e0129adfb57799706e46811324044b990d109acb92adf5dc7a67ffa",
+        "installed_entry":  "genesis_plus_gx_libretro.dll",
+        "runtime_sha256":  "2ca147e70b971e43e46b0b55f361db456b4d85b93b2e150c7250cb599776c919"
+    }
+]
